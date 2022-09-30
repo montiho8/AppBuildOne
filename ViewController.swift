@@ -8,7 +8,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     @IBOutlet weak var firstTabLabel: UILabel!
     
     @IBOutlet weak var firstTextView: UITextView!
@@ -38,7 +38,6 @@ class ViewController: UIViewController {
     @IBAction func aboutUhwoButtonPressed(_ sender: Any) {
         
         print(firstTextView.text = "UH West Oʻahu offers unique programs such as creative media, cybersecurity, health sciences, hospitality and tourism, and sustainable community food systems – developed to address workforce needs and leverage today’s technologies to train the next generation of community leaders.")
-        
     }
     
     @IBAction func aboutAcmButtonPressed(_ sender: Any)
@@ -50,14 +49,4 @@ class ViewController: UIViewController {
         
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

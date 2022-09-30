@@ -9,21 +9,44 @@ import UIKit
 
 class secondViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBOutlet weak var firstLabel: UILabel!
+    
+    
+    @IBOutlet weak var secondLabel: UILabel!
+    
+    
+    var numberOne: Int = 8
+    
+    var numberTwo: Int = 12
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        self.firstLabel.text = "The Answer is"
+        
+        self.secondLabel.text = ""
+        
     }
-    */
-
+    
+    @IBAction func calculateButtonPressed(_ sender: Any) {
+        
+        print(secondLabel.text = "20")
+        
+        if numberOne + numberTwo == 20
+        {
+            self.view.backgroundColor = UIColor.purple
+        }
+        
+        else
+        {
+            self.view.backgroundColor = UIColor.blue
+        }
+        
+        
+    }
+    
+    
 }
+
